@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: probe-service
+  registerCenter:
+    hosts:
+      - 127.0.0.1:2181
+      - 127.0.0.1:2181
+    basePath: /probe-service
+    serverType: 0
+  nettyServer:
+    hostName: localhost
+    port: 12181
