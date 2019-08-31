@@ -1,6 +1,9 @@
+server:
+  port: 10080
+
 spring:
   application:
-    name: probe-service
+    name: probe-client
   register-center:
     hosts:
       - 127.0.0.1:2181

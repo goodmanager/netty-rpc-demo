@@ -1,12 +1,12 @@
 spring:
   application:
     name: probe-service
-  registerCenter:
+  register-center:
     hosts:
       - 127.0.0.1:2181
       - 127.0.0.1:2181
-    basePath: /probe-service
-    serverType: 0
-  nettyServer:
-    hostName: localhost
+    base-path: /probe-service
+    register-center-type: ZOOKEEPER
+  netty-server:
+    host-name: 127.0.0.1
     port: 12181
