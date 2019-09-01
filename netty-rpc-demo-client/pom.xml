@@ -17,6 +17,11 @@
             <artifactId>rpc-framework-client</artifactId>
             <version>1.0</version>
         </dependency>
+        <dependency>
+        	<groupId>com.felix</groupId>
+        	<artifactId>netty-rpc-demo-api</artifactId>
+        	<version>1.0</version>
+        </dependency>
     </dependencies>
     
 </project>
