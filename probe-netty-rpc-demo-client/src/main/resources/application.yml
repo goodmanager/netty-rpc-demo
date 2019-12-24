@@ -11,7 +11,8 @@ spring:
       - 192.168.200.13:2181
     base-path: /probe-service
     register-center-type: ZOOKEEPER
+    select-strategy: ROUNDROBIN
   netty-server:
     host-name: 127.0.0.1
     port: 12181
-    select-service-strategy: ROUNDROBIN
+    select-strategy: ROUNDROBIN
