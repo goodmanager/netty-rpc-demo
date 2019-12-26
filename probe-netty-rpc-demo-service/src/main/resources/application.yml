@@ -2,12 +2,12 @@ spring:
   application:
     name: probe-service
   register-center:
-    hosts:
+    hosts:  #注册中心列表,内网ip
       - 192.168.200.11:2181
       - 192.168.200.12:2181
       - 192.168.200.13:2181
     base-path: /probe-service
     register-center-type: ZOOKEEPER
   netty-server:
-    host-name: 127.0.0.1
+    host-name: 127.0.0.1  #服务所在的服务器的内网ip
     port: 12181
