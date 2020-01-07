@@ -13,6 +13,6 @@ spring:
     register-center-type: ZOOKEEPER
     select-strategy: ROUNDROBIN
   netty-server:
-    host-name: 127.0.0.1 #服务所在的服务器的内网ip
+    ip-addr: 127.0.0.1 #服务所在的服务器的内网ip
     port: 12181
     select-strategy: ROUNDROBIN
