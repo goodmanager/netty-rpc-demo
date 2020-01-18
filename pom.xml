@@ -19,6 +19,20 @@
 		<module>probe-netty-rpc-demo-client</module>
 		<module>probe-netty-rpc-demo-service</module>
 	</modules>
+	
+	<dependencies>
+
+	<dependency>
+		<groupId>com.felix</groupId>
+		<artifactId>probe-log-trace</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+	<dependency>
+		<groupId>com.felix</groupId>
+		<artifactId>probe-common</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
