@@ -12,26 +12,31 @@
 
 	<artifactId>probe-netty-rpc-demo</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0</version>
+	<version>0.0.1</version>
 
 	<modules>
 		<module>probe-netty-rpc-demo-api</module>
 		<module>probe-netty-rpc-demo-client</module>
 		<module>probe-netty-rpc-demo-service</module>
 	</modules>
-	
+
 	<dependencies>
 
-	<dependency>
-		<groupId>com.felix</groupId>
-		<artifactId>probe-log-trace</artifactId>
-		<version>0.0.1</version>
-	</dependency>
-	<dependency>
-		<groupId>com.felix</groupId>
-		<artifactId>probe-common</artifactId>
-		<version>0.0.1</version>
-	</dependency>
+		<dependency>
+			<groupId>com.felix</groupId>
+			<artifactId>probe-log-trace</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.felix</groupId>
+			<artifactId>probe-common</artifactId>
+			<version>0.0.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
