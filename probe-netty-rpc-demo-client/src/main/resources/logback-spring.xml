@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
-	<property name="LOG_HOME" value="E:/workspaces/logs" />
+	<property name="LOG_HOME" value="E:/workspaces/logs/netty-rpc-demo" />
 	<property name="LOG_NAME" value="netty-rpc-demo-client"></property>
 	<appender name="STDOUT"
 		class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
-			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{traceId}] [%thread] %-5level [%c{100} %line] %msg%n</pattern>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%c{100} %line] %msg%n</pattern>
 			<charset>UTF-8</charset>
 		</encoder>
 	</appender>
 	<appender name="FILEINFO"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${LOG_HOME}/${LOG_NAME}/${LOG_NAME}.log</file>
+		<file>${LOG_HOME}/${LOG_NAME}-info.log</file>
 		<!--如果只是想要 Info 级别的日志，只是过滤 info 还是会输出 Error 日志，因为 Error 的级别高， 所以我们使用下面的策略，可以避免输出 
 			Error 的日志 -->
 		<filter class="ch.qos.logback.classic.filter.LevelFilter">
@@ -23,12 +23,12 @@
 			<onMismatch>ACCEPT</onMismatch>
 		</filter>
 		<encoder>
-			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{traceId}] [%thread] %-5level [%c{100} %line] %msg%n</pattern>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%c{100} %line] %msg%n</pattern>
 			<charset>UTF-8</charset>
 		</encoder>
 		<rollingPolicy
 			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${LOG_HOME}/${LOG_NAME}/${LOG_NAME}-%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
+			<fileNamePattern>${LOG_HOME}/${LOG_NAME}-info-%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
 			<maxHistory>30</maxHistory>
 			<timeBasedFileNamingAndTriggeringPolicy
 				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
@@ -38,18 +38,18 @@
 	</appender>
 	<appender name="FILEWARN"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${LOG_HOME}/${LOG_NAME}/${LOG_NAME}.log</file>
+		<file>${LOG_HOME}/${LOG_NAME}-warn.log</file>
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <!--设置日志级别,过滤掉info日志,只输入warn日志-->
             <level>WARN</level>
         </filter>
 		<encoder>
-			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{traceId}] [%thread] %-5level [%c{100} %line] %msg%n</pattern>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%c{100} %line] %msg%n</pattern>
 			<charset>UTF-8</charset>
 		</encoder>
 		<rollingPolicy
 			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${LOG_HOME}/${LOG_NAME}/${LOG_NAME}-%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
+			<fileNamePattern>${LOG_HOME}/${LOG_NAME}-warn-%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
 			<maxHistory>30</maxHistory>
 			<timeBasedFileNamingAndTriggeringPolicy
 				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
