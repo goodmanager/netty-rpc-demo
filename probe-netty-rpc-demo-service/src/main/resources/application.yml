@@ -1,14 +1,13 @@
 spring:
   application:
-    name: probe-services
+    name: probe-services #服务名称
   register-center:
     hosts:  #注册中心列表,内网ip
       - localhost:2181
       - localhost:2182
       - localhost:2183
-    base-path: /probe-services
-    register-center-type: ZOOKEEPER
+    base-path: /probe-services #zookeeper注册中心的basePath
+    register-center-type: ZOOKEEPER #注册中心类型支持ZOOKEEPER、CONSUL
   netty-server:
-    ip-addr: 127.0.0.1  #服务所在的服务器的内网ip
-    port: 12181
-    select-strategy: ROUNDROBIN
+    ip-addr: 127.0.0.1  #netty服务所在的服务器的内网ip
+    port: 12181 #netty服务端口
