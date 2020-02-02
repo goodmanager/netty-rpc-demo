@@ -11,3 +11,7 @@ spring:
   netty-server:
     ip-addr: 127.0.0.1  #netty服务所在的服务器的内网ip
     port: 12181 #netty服务端口
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0 #采样100%

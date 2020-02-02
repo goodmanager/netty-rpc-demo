@@ -1,4 +1,4 @@
-package com.felix.entity;
+package com.felix.rpc.entity;
 
 import java.util.Date;
 

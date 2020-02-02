@@ -1,4 +1,4 @@
-package com.felix.dto;
+package com.felix.rpc.dto;
 
 import lombok.Data;
 import lombok.ToString;

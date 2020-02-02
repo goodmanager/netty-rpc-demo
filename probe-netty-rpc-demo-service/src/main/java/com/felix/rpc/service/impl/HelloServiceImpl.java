@@ -1,6 +1,6 @@
-package com.felix.service.impl;
+package com.felix.rpc.service.impl;
 
-import com.felix.api.HelloService;
+import com.felix.rpc.api.HelloService;
 import com.felix.rpc.framework.common.annotation.RpcService;
 
 @RpcService(targetInterface = HelloService.class)

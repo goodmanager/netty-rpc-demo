@@ -8,7 +8,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.felix.api.HelloService;
+import com.felix.rpc.api.HelloService;
 import com.felix.rpc.framework.client.proxy.RpcProxy;
 
 @SpringBootApplication(scanBasePackages = { "com.felix" })
