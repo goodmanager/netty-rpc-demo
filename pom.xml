@@ -21,16 +21,15 @@
 	</modules>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>com.felix</groupId>
-			<artifactId>probe-log-trace</artifactId>
-			<version>0.0.1</version>
-		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.felix</groupId>
+			<artifactId>probe-log-trace</artifactId>
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.felix</groupId>
