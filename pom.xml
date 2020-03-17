@@ -24,16 +24,6 @@
 		<!-- 如果某个工程下的所有模块都要依赖某个库,就在工程下的pom.xml中添加,否则就在模块中添加 -->
 		<dependency>
 			<groupId>com.felix</groupId>
-			<artifactId>probe-log-trace</artifactId>
-			<version>0.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.felix</groupId>
 			<artifactId>probe-common</artifactId>
 			<version>0.0.1</version>
 		</dependency>
